@@ -83,11 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='mvim'
- fi
+ #if [[ -n $SSH_CONNECTION ]]; then
+   #export EDITOR='vim'
+ #else
+   #export EDITOR='vim'
+ #fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -105,10 +105,14 @@ alias lp="docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond lilypond"
 alias abc="docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond abc2ly"
 alias cl="clear"
 
+alias ls="ls -lat"
+##alias =""
+alias cat="bat"
+alias l="exa -lahF"
+alias find="fd"
+alias dotfiles="yadm"
 #alias =""
-#alias =""
-#alias =""
-
+#alias pw="lpass show -c --password $(lpass ls  | fzf | awk '{print $(NF)}' | sed 's/\]//g')"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
