@@ -98,14 +98,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
 # Lilypond alias'
 alias lp="docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond lilypond"
 alias abc="docker run --rm -v $(pwd):/app -w /app gpit2286/lilypond abc2ly"
 alias cl="clear"
 
-alias ls="ls -lat"
+alias log="vim ~/Dropbox/robs_log.txt"
+#alias ls="ls -lat"
 ##alias =""
 alias cat="bat"
 alias l="exa -lahF"
